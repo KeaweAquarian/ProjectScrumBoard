@@ -39,7 +39,7 @@ const App = () => {
 
   // Fetch Tasks
   const fetchTasks = async () => {
-    const res = await fetch('https://json-server-xi-seven.vercel.app/tasks')
+    const res = await fetch('http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks')
     const data = await res.json()
 
     return data
@@ -47,7 +47,7 @@ const App = () => {
 
   // Fetch Task by id
   const fetchTask = async (id) => {
-    const res = await fetch(`https://json-server-xi-seven.vercel.app/tasks/${id}`)
+    const res = await fetch(`http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks/${id}`)
     const data = await res.json()
 
     return data
@@ -55,7 +55,7 @@ const App = () => {
 
   // Add Task
   const addTask = async (task) => {
-    const res = await fetch('https://json-server-xi-seven.vercel.app/tasks', {
+    const res = await fetch('http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -87,7 +87,7 @@ const App = () => {
 
   // Delete Task
   const deleteTask = async (id) => {
-    const res = await fetch(`https://json-server-xi-seven.vercel.app/tasks/${id}`, {
+    const res = await fetch(`http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks/${id}`, {
       method: 'DELETE',
     })
 
@@ -121,7 +121,7 @@ const App = () => {
     
       const upDate = {...taskToToggle, tested: !taskToToggle.tested}
       console.log(upDate)
-      const res = await fetch(`https://json-server-xi-seven.vercel.app/tasks/${id}`, {
+      const res = await fetch(`http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks/${id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json',
@@ -168,7 +168,7 @@ const App = () => {
  
        }
   
-      const res = await fetch(`https://json-server-xi-seven.vercel.app/tasks/${id}`, {
+      const res = await fetch(`http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks/${id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json',
@@ -206,7 +206,7 @@ const App = () => {
  
        }
   
-      const res = await fetch(`https://json-server-xi-seven.vercel.app/tasks/${id}`, {
+      const res = await fetch(`http://backendscrumboard-env.eba-pavvi2mj.us-east-1.elasticbeanstalk.com/api/tasks/${id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json',
