@@ -1,0 +1,162 @@
+{
+  "tasks": [
+    {
+      "feature": "Button",
+      "userStory": "User needs to open form",
+      "reminder": false,
+      "priority": "high",
+      "color": "#FCFE7C",
+      "progress": "inProgress",
+      "tested": false,
+      "id": 5
+    },
+    {
+      "feature": "Home Screen Logo",
+      "userStory": "User needs company logo to direct clients back to home page.",
+      "reminder": false,
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "notCommited",
+      "tested": false,
+      "id": 6
+    },
+    {
+      "feature": "Navigation Links",
+      "userStory": "User needs to navigate through pages.",
+      "reminder": false,
+      "priority": "medium",
+      "color": "#FCFE7C",
+      "progress": "notCommited",
+      "tested": false,
+      "id": 7
+    },
+    {
+      "feature": "Habbit add form",
+      "userStory": "Form to create habbits to chain.",
+      "reminder": false,
+      "priority": "medium",
+      "color": "#FCFE7C",
+      "progress": "inProgress",
+      "tested": false,
+      "id": 8
+    },
+    {
+      "feature": "Log in form",
+      "userStory": "Create a log in form that takes users to personal accounts.",
+      "reminder": false,
+      "priority": "high",
+      "color": "#FCFE7C",
+      "progress": "completed",
+      "tested": true,
+      "id": 9
+    },
+    {
+      "feature": "Daily habbit links componet",
+      "userStory": "User needs to see each days habbit links.",
+      "priority": "medium",
+      "color": "#FCFE7C",
+      "progress": "toDo",
+      "tested": false,
+      "id": 10
+    },
+    {
+      "feature": "Habbits Component",
+      "userStory": "An interface to individual habbits",
+      "priority": "high",
+      "color": "#FCFE7C",
+      "progress": "toDo",
+      "tested": false,
+      "id": 11
+    },
+    {
+      "feature": "Delete Button",
+      "userStory": " A way to delete habbits.",
+      "priority": "high",
+      "color": "#FCFE7C",
+      "progress": "toDo",
+      "tested": false,
+      "id": 12
+    },
+    {
+      "feature": "Graph Based Success Chart",
+      "userStory": "Offer the user an overview of their accomplishments.",
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "notCommited",
+      "tested": false,
+      "id": 13
+    },
+    {
+      "feature": "OnClick method to mark a habbit as completed",
+      "userStory": "System to mark each habbit once it is completed.",
+      "priority": "medium",
+      "color": "#FCFE7C",
+      "progress": "toDo",
+      "tested": false,
+      "id": 14
+    },
+    {
+      "feature": "Alarm",
+      "userStory": "Alert that user has not marked off a habbit on time.",
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "notCommited",
+      "tested": false,
+      "id": 15
+    },
+    {
+      "feature": "Edit Feature",
+      "userStory": "Means for users to edit set habits",
+      "priority": "high",
+      "color": "#FCFE7C",
+      "progress": "inProgress",
+      "tested": false,
+      "id": 16
+    },
+    {
+      "feature": "Daily Habbits Component",
+      "userStory": "User can see habbits that are done daily",
+      "priority": "medium",
+      "color": "#FCFE7C",
+      "progress": "completed",
+      "tested": true,
+      "id": 17
+    },
+    {
+      "feature": "Weekly Habbits Components",
+      "userStory": "User can see habbits that are done weekly",
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "completed",
+      "tested": false,
+      "id": 18
+    },
+    {
+      "feature": "Monthly Habbits Components",
+      "userStory": "User can see habbits that are done monthly",
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "inProgress",
+      "tested": false,
+      "id": 19
+    },
+    {
+      "feature": "Schedule Feature",
+      "userStory": "Mark a habbit for a specific date",
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "notCommited",
+      "tested": false,
+      "id": 20
+    },
+    {
+      "feature": "About link",
+      "userStory": "Describe the features of the app",
+      "priority": "low",
+      "color": "#FCFE7C",
+      "progress": "notCommited",
+      "tested": false,
+      "id": 21
+    }
+  ]
+}

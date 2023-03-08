@@ -1,0 +1,9 @@
+app:
+  dataSource:
+    postgres:
+      port: 5432
+      username: postgres
+      password: admin
+      host: localhost
+      databaseName: scrumboard
+      jdbc-url: jdbc:postgressql://${app.dataSource.postgres.host}:${app.dataSource.postgres.port}/${app.dataSource.postgres.databaseName}
