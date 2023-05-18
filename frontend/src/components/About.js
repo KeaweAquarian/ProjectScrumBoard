@@ -1,5 +1,9 @@
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import {Link} from "react-router-dom";
-
 
 const About = () => {
     return (
@@ -7,8 +11,8 @@ const About = () => {
         <h1>Personal Scrum Board</h1>
         <br />
         <h2>Designed by: Keawe Aquarian</h2>
-        <p>Keawe is a recent IT graduate, with a focus on backend server side java programming. 
-            Since completing his studies in Jan 2023, he has continued learning new technologies 
+        <p>Keawe is an IT graduate, with a focus on backend server side java programming.
+            Since completing his studies, he has continued learning new technologies
             such as react and modern concepts such as Agile Methodology. This project was an excellent 
             bridging of both fields of study, and since being completed has proven to be a useful
             tool for following projects. 

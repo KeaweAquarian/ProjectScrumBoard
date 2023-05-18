@@ -1,6 +1,11 @@
-
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import PropTypes from "prop-types"
 
+//standard button
 const Button = ({color, text, onClick}) => {
 
     return (

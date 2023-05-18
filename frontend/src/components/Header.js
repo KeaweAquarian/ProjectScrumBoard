@@ -1,8 +1,13 @@
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import PropTypes from "prop-types"
 import { useLocation, Link } from "react-router-dom"
 import Button from "./Button"
 
-
+//Site Header
 const Header = ({title, onAdd, showAdd}) => {
   
   const location = useLocation()

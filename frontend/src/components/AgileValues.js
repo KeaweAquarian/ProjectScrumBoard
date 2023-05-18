@@ -1,6 +1,11 @@
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
+
 import {Link} from "react-router-dom";
 import image from '../Images/agileFour.png';
-
 
 
 const AgileValues = () => {

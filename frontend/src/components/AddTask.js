@@ -1,7 +1,12 @@
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import { useState } from "react"
 
 
-
+//Form to add task to list
 const AddTask = ({onAdd}) => {
     const [feature, setFeature] = useState("")
     const [userStory, setUserStory] = useState("")
@@ -12,7 +17,7 @@ const AddTask = ({onAdd}) => {
     
     const onSubmit = (e => {
         e.preventDefault()
-
+//check feature and user story added by user
         if(!feature){
             alert("Please add feature")
             return
@@ -33,6 +38,7 @@ const AddTask = ({onAdd}) => {
 
     })
     return (
+        //add form
       <form className="add-form" onSubmit={onSubmit}>
         <div className="form-control">
             <label>Feature</label>

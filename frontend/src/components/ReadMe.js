@@ -1,6 +1,11 @@
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import {Link} from "react-router-dom";
 
-
+//ReadMe file
 const ReadMe = () => {
     return (
         <>

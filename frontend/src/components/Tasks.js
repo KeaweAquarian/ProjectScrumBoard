@@ -1,6 +1,11 @@
-
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import Task from "./Task"
 
+//Tasks component
 const Tasks = ({tasks, onDelete, testedToggle, priorityToggle, progressToggle}) => {
     
     return (

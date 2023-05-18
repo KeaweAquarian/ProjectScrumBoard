@@ -1,6 +1,11 @@
-
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 import React, { useState } from 'react';
 
+//Task Component
 const Task = ({ task, onDelete,  testedToggle, priorityToggle, progressToggle }) => {
     const [isShown, setIsShown] = useState(false);
 
