@@ -1,9 +1,13 @@
-package com.keaweaquarian.scrumboard.task;
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 
+package com.keaweaquarian.scrumboard.task;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 @NoArgsConstructor
@@ -11,7 +15,7 @@ import javax.persistence.*;
 @Data
 @Table(name="task")
 public class Task {
-
+//Auto generate id number
     @Id
     @SequenceGenerator(
             name = "task_sequence",

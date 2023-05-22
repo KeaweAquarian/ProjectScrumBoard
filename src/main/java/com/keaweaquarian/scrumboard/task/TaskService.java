@@ -1,9 +1,13 @@
+/**
+ * @author Keawe Aquarian
+ * @version 1.0
+ * @since 01/01/2023
+ */
 package com.keaweaquarian.scrumboard.task;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Objects;
@@ -18,6 +22,7 @@ public class TaskService {
         this.taskRepository = taskRepository;
     }
 
+    //Method to return all tasks
     @GetMapping
     public List<com.keaweaquarian.scrumboard.task.Task> getTaskList(){
         return  taskRepository.findAll();
@@ -31,6 +36,7 @@ public class TaskService {
     }
 
 
+    //Method to add new task
     public void addNewTask(Task task) {
         Optional<Task> taskOptional = taskRepository
                 .findById(task.getId());
@@ -41,6 +47,7 @@ public class TaskService {
     taskRepository.save(task);
     }
 
+    //Method to delete a task
     public void deleteTask(Long taskId) {
         boolean exists = taskRepository.existsById(taskId);
         if (!exists){
@@ -49,6 +56,7 @@ public class TaskService {
     taskRepository.deleteById(taskId);
     }
 
+    //Method to update a task
     @Transactional
     public void updateTask(Long taskId, Task task) {
         Task task2 = taskRepository.findById(taskId)
