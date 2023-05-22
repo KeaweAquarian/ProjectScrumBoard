@@ -3,11 +3,28 @@ package com.keaweaquarian.scrumboard;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ScrumboardApplicationTests {
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
+
+class ScrumboardApplicationTests {
+Calculator underTest = new Calculator();
 	@Test
-	void contextLoads() {
+	void itshouldAddNumers(){
+		//given
+		int a = 1;
+		int b = 2;
+		//when
+		int result = underTest.add(a, b);
+
+		//then
+		int expected = 3;
+		assertThat(result).isEqualTo(expected);
+	}
+
+	class Calculator{
+		int add(int a, int b){
+			return a + b;
+		}
 	}
 
 }
