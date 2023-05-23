@@ -1,11 +1,12 @@
 package com.keaweaquarian.scrumboard;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-
+@DataJpaTest
 class ScrumboardApplicationTests {
 Calculator underTest = new Calculator();
 	@Test
