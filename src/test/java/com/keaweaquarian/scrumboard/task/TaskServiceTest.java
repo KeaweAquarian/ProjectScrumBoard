@@ -10,8 +10,14 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+import static org.assertj.core.api.InstanceOfAssertFactories.OPTIONAL;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
 
@@ -60,6 +66,23 @@ class TaskServiceTest {
         Task capturedTask = taskArgumentCaptor.getValue();
 
         assertThat(capturedTask).isEqualTo(task1);
+    }
+
+    @Test
+    void cannotAddUsedTaskId() {
+        //given
+        Task task1 = new Task(
+                "Button", "User needs to open form", false, "high", "#FCFE7C", "inProgress",false
+        );
+        //when
+
+       underTest.addNewTask(task1);
+       List<Task> task = taskRepository.findAll();
+        boolean exists = taskRepository.findByFeature("Button").isPresent();
+        //then
+        assertThatThrownBy(() ->underTest.addNewTask(task1))
+                .hasMessageContaining("Task already created");
+
     }
 
     @Test

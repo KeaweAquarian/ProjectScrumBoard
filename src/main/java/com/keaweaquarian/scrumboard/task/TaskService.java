@@ -39,9 +39,9 @@ public class TaskService {
     //Method to add new task
     public void addNewTask(Task task) {
         Optional<Task> taskOptional = taskRepository
-                .findById(task.getId());
+                .findByFeature(task.getFeature());
         if(taskOptional.isPresent()){
-            throw new IllegalStateException("Id already created");
+            throw new IllegalStateException("Task already created");
         }
 
     taskRepository.save(task);
