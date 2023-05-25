@@ -1,5 +1,6 @@
 package com.keaweaquarian.scrumboard.task;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,11 @@ class TaskRepositoryTest {
     @Autowired
     private TaskRepository taskRepository;
 
+    @AfterEach
+    void tearDown() {
+        taskRepository.deleteAll();
+    }
+
     @Test
     void findByFeature() {
         //given
@@ -28,7 +34,7 @@ class TaskRepositoryTest {
 
         //when
         boolean exists = taskRepository.findByFeature("Button").isPresent();
-
+List<Task> list = taskRepository.findAll();
         //then
         assertThat(exists).isTrue();
 
